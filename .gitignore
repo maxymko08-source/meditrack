@@ -25,3 +25,4 @@ migration-map.json
 firmware/**/secrets.h
 firmware/.pio/
 .tools/
+firmware/test_mechanism.exe

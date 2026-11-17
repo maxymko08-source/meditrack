@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="900" height="420" fill="#f5f7fa"/>
+<g font-family="Arial" font-size="20" fill="#123">
+<text x="30" y="40">MediTrack — ESP32 та SG90</text>
+<g fill="white" stroke="#456" stroke-width="2"><rect x="45" y="95" width="220" height="150" rx="12"/><rect x="620" y="95" width="230" height="150" rx="12"/><rect x="350" y="280" width="220" height="100" rx="12"/></g>
+<text x="100" y="135">ESP32</text><text x="70" y="170">USB: живлення</text><text x="665" y="135">SG90</text>
+<text x="375" y="320">Блок 5 В / 2 А</text>
+<path d="M265 185 H620" fill="none" stroke="#e90" stroke-width="4"/><text x="340" y="172">GPIO18 → сигнал</text>
+<path d="M570 310 H730 V245" fill="none" stroke="#d44" stroke-width="4"/><text x="750" y="290">+5 В</text>
+<path d="M145 245 V350 H350 M570 350 H815 V245" fill="none" stroke="#222" stroke-width="4"/><text x="170" y="335">Спільний GND</text>
+<text x="30" y="405" font-size="16">SG90 не підключати до 3V3. Біля SG90: 470–1000 мкФ + 100 нФ між +5 В і GND.</text>
+</g></svg>
