@@ -12,3 +12,16 @@ __pycache__/
 
 # Налаштування VS Code
 .vscode/
+
+# Локальні дані, резервні копії та секрети прошивки
+data/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.backup-*
+*.before-migration-*.bak
+legacy-*-export.json
+migration-map.json
+firmware/**/secrets.h
+firmware/.pio/
+.tools/

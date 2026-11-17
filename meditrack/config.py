@@ -1,30 +1,34 @@
-# ============================================================
-#  MediTrack — config.py
-#  Централізована конфігурація через .env файл
-# ============================================================
-
+"""Single configuration source: repository .env; imports have no side effects."""
+from dataclasses import dataclass
+from pathlib import Path
 import os
-from dotenv import load_dotenv
 
-# Завантажуємо змінні з файлу .env (якщо він є)
-load_dotenv()
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# --- Telegram ---
-BOT_TOKEN: str = os.environ["BOT_TOKEN"]
+@dataclass(frozen=True)
+class Settings:
+    database_path: str = str(BASE_DIR / "data" / "meditrack.sqlite3")
+    bot_token: str = ""
+    device_id: str = "meditrack-01"
+    device_secret: str = ""
+    owner_telegram_id: int = 0
+    api_host: str = "127.0.0.1"
+    api_port: int = 5000
+    late_seconds: int = 300
 
-# --- MySQL (спільні параметри) ---
-DB_HOST: str     = os.getenv("DB_HOST", "localhost")
-DB_PORT: int     = int(os.getenv("DB_PORT", "3306"))
-DB_NAME: str     = os.getenv("DB_NAME", "meditrack")
-DB_USER: str     = os.environ["DB_USER"]
-DB_PASSWORD: str = os.environ["DB_PASSWORD"]
 
-# --- Flask API ---
-API_HOST: str = os.getenv("API_HOST", "0.0.0.0")
-API_PORT: int = int(os.getenv("API_PORT", "5000"))
-API_DEBUG: bool = os.getenv("API_DEBUG", "false").lower() == "true"
-
-# --- Логіка диспенсера ---
-# Скільки хвилин тому вважати розклад «актуальним»
-DISPENSE_WINDOW_MINUTES: int = int(os.getenv("DISPENSE_WINDOW_MINUTES", "5"))
+def load() -> Settings:
+    from dotenv import load_dotenv
+    load_dotenv(BASE_DIR / ".env", override=False)
+    path = Path(os.getenv("DATABASE_PATH", "data/meditrack.sqlite3"))
+    if not path.is_absolute():
+        path = BASE_DIR / path
+    return Settings(
+        database_path=str(path), bot_token=os.getenv("BOT_TOKEN", "").strip(),
+        device_id=os.getenv("DEVICE_ID", "meditrack-01"),
+        device_secret=os.getenv("DEVICE_SECRET", ""),
+        owner_telegram_id=int(os.getenv("OWNER_TELEGRAM_ID", "0")),
+        api_host=os.getenv("API_HOST", "127.0.0.1"),
+        api_port=int(os.getenv("API_PORT", "5000")),
+    )
