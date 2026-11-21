@@ -5,21 +5,41 @@
     "nonmanifold_edges": 0,
     "degenerate": 0,
     "components": 1,
-    "volume_mm3": 412035.0706251357,
+    "volume_mm3": 176725.78106371468,
     "bounds_mm": [
       [
-        -102.0,
-        -102.0,
+        -56.0,
+        -40.0,
         0.0
       ],
       [
-        102.0,
-        102.0,
-        67.4000015258789
+        56.0,
+        94.0,
+        146.0
       ]
     ],
-    "csg_status": "Error.NoError",
-    "stl_sha256": "fd576051fca9f353be14fde1a373c3b25da205c6e80c599a9e4f92fd935fecdd"
+    "stl_sha256": "9c604c48450355ba69c609e154ca624c803a0fafa85da793fed85f5aba4c0b30"
+  },
+  "carrier": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 71104.27649423174,
+    "bounds_mm": [
+      [
+        -99.0,
+        -99.0,
+        146.0
+      ],
+      [
+        99.0,
+        99.0,
+        153.39999389648438
+      ]
+    ],
+    "stl_sha256": "86e552b1c54ac4591280bc901dc5422bedb5b694a17de2b1344d805e5455297b"
   },
   "servo_bridge": {
     "watertight": true,
@@ -27,21 +47,20 @@
     "nonmanifold_edges": 0,
     "degenerate": 0,
     "components": 1,
-    "volume_mm3": 4139.534190979527,
+    "volume_mm3": 2879.774199677036,
     "bounds_mm": [
       [
         -27.0,
         -19.0,
-        57.0
+        143.0
       ],
       [
         27.0,
-        13.0,
-        60.0
+        4.0,
+        146.0
       ]
     ],
-    "csg_status": "Error.NoError",
-    "stl_sha256": "a2f5008773249678868651bd3516fbe60d2f72db60aec810411668404256f230"
+    "stl_sha256": "226b3455f965afbd39f19a9670be27d5314cc80cb8a69a970249c2ac2806fcf1"
   },
   "rotating_floor": {
     "watertight": true,
@@ -54,15 +73,14 @@
       [
         -92.0,
         -92.0,
-        64.0
+        150.0
       ],
       [
         92.0,
         92.0,
-        67.0
+        153.0
       ]
     ],
-    "csg_status": "Error.NoError",
     "stl_sha256": "1c43ca2511a0fe715b460db67e6f9229b827f961905fc533d0053a1f2b74e8ed"
   },
   "chambers": {
@@ -76,15 +94,14 @@
       [
         -98.0,
         -98.0,
-        67.4000015258789
+        153.39999389648438
       ],
       [
         98.0,
         98.0,
-        95.4000015258789
+        181.39999389648438
       ]
     ],
-    "csg_status": "Error.NoError",
     "stl_sha256": "016761829fed881af69fbecdcf8f72d22087098b34ad0278e57a864aea806056"
   },
   "loading_cover": {
@@ -93,21 +110,41 @@
     "nonmanifold_edges": 0,
     "degenerate": 0,
     "components": 1,
-    "volume_mm3": 94031.78356301812,
+    "volume_mm3": 94101.02786785479,
     "bounds_mm": [
       [
         -100.0,
         -100.0,
-        95.4000015258789
+        181.39999389648438
       ],
       [
         100.0,
         100.0,
-        98.4000015258789
+        184.39999389648438
       ]
     ],
-    "csg_status": "Error.NoError",
-    "stl_sha256": "2149958d395ea813e6b64b0a922785d5c07ef4a85710b64d51d6fcf6b3ef6f90"
+    "stl_sha256": "0574bb172f183b40ea61b1c199afca10d9c3479b066712d0f793a22c7f3c2d2e"
+  },
+  "funnel": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 86033.89757167356,
+    "bounds_mm": [
+      [
+        -87.79521942138672,
+        6.0,
+        4.0217390060424805
+      ],
+      [
+        87.79521942138672,
+        96.0,
+        146.0
+      ]
+    ],
+    "stl_sha256": "089cbf97921c14238ba6b2736ef1b61495315ff289e75101099d8067787f9a6f"
   },
   "collection_tray": {
     "watertight": true,
@@ -115,21 +152,20 @@
     "nonmanifold_edges": 0,
     "degenerate": 0,
     "components": 1,
-    "volume_mm3": 78584.0,
+    "volume_mm3": 9374.480333239015,
     "bounds_mm": [
       [
-        -85.0,
-        12.0,
-        5.0
+        -29.0,
+        85.0,
+        0.0
       ],
       [
-        85.0,
-        124.0,
-        45.0
+        29.0,
+        129.0,
+        22.0
       ]
     ],
-    "csg_status": "Error.NoError",
-    "stl_sha256": "2359fbc40a565859c744b7e57ad7c17258e906e7cce391ce39fff11db48b5842"
+    "stl_sha256": "d59be3d6653feafc3044968972a03c53ae2222c9a1f12e064c6587f45622ca0c"
   },
   "fit_coupon": {
     "watertight": true,
@@ -150,7 +186,6 @@
         5.0
       ]
     ],
-    "csg_status": "Error.NoError",
     "stl_sha256": "90e9a33256084676ac6ac994e44312d5c67f2ecbb7d6dfdb257151769eebd34e"
   },
   "horn_coupon": {
@@ -172,18 +207,92 @@
         3.0
       ]
     ],
-    "csg_status": "Error.NoError",
     "stl_sha256": "fda395fbc6accfec0b46baf2508b41563e216a35befe1c0a6ba2e1f7d9b659c0"
   },
-  "motion": {
-    "sample_step_deg": 1,
-    "collisions": [],
-    "axial_gap_mm": 0.4,
-    "future_chambers_open_at_dwell": false,
-    "return_requires_empty": true,
-    "self_intersections": "Run validate_intersections.py; independent MeshLab results are in self_intersections.json"
-  },
-  "fixed_part_collisions": [],
-  "drawer_collision_offsets_mm": [],
-  "reference_envelope_collisions": []
+  "fixed_collisions": [],
+  "reference_collisions": [],
+  "motion_collisions": [],
+  "flow": [
+    {
+      "compartment": 1,
+      "angle": 20,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 2,
+      "angle": 40,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 3,
+      "angle": 60,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 4,
+      "angle": 80,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 5,
+      "angle": 100,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 6,
+      "angle": 120,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 7,
+      "angle": 140,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    },
+    {
+      "compartment": 8,
+      "angle": 160,
+      "catch_samples": 49,
+      "catch_failures": [],
+      "sphere_path_count": 9,
+      "probe_diameter_mm": 12.4,
+      "path_failures": [],
+      "minimum_segment_drop_mm": 19.956521739130434
+    }
+  ],
+  "limits": "Geometry and free-space path checks, not a friction/bridging/bounce simulation."
 }

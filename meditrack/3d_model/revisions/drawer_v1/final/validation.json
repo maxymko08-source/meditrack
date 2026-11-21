@@ -1,0 +1,189 @@
+{
+  "enclosure": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 412035.0706251357,
+    "bounds_mm": [
+      [
+        -102.0,
+        -102.0,
+        0.0
+      ],
+      [
+        102.0,
+        102.0,
+        67.4000015258789
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "fd576051fca9f353be14fde1a373c3b25da205c6e80c599a9e4f92fd935fecdd"
+  },
+  "servo_bridge": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 4139.534190979527,
+    "bounds_mm": [
+      [
+        -27.0,
+        -19.0,
+        57.0
+      ],
+      [
+        27.0,
+        13.0,
+        60.0
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "a2f5008773249678868651bd3516fbe60d2f72db60aec810411668404256f230"
+  },
+  "rotating_floor": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 77516.69008970352,
+    "bounds_mm": [
+      [
+        -92.0,
+        -92.0,
+        64.0
+      ],
+      [
+        92.0,
+        92.0,
+        67.0
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "1c43ca2511a0fe715b460db67e6f9229b827f961905fc533d0053a1f2b74e8ed"
+  },
+  "chambers": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 705256.8190360145,
+    "bounds_mm": [
+      [
+        -98.0,
+        -98.0,
+        67.4000015258789
+      ],
+      [
+        98.0,
+        98.0,
+        95.4000015258789
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "016761829fed881af69fbecdcf8f72d22087098b34ad0278e57a864aea806056"
+  },
+  "loading_cover": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 94031.78356301812,
+    "bounds_mm": [
+      [
+        -100.0,
+        -100.0,
+        95.4000015258789
+      ],
+      [
+        100.0,
+        100.0,
+        98.4000015258789
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "2149958d395ea813e6b64b0a922785d5c07ef4a85710b64d51d6fcf6b3ef6f90"
+  },
+  "collection_tray": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 78584.0,
+    "bounds_mm": [
+      [
+        -85.0,
+        12.0,
+        5.0
+      ],
+      [
+        85.0,
+        124.0,
+        45.0
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "2359fbc40a565859c744b7e57ad7c17258e906e7cce391ce39fff11db48b5842"
+  },
+  "fit_coupon": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 3383.5526183544293,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        32.0,
+        22.0,
+        5.0
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "90e9a33256084676ac6ac994e44312d5c67f2ecbb7d6dfdb257151769eebd34e"
+  },
+  "horn_coupon": {
+    "watertight": true,
+    "winding": true,
+    "nonmanifold_edges": 0,
+    "degenerate": 0,
+    "components": 1,
+    "volume_mm3": 1033.7342134751382,
+    "bounds_mm": [
+      [
+        -13.0,
+        -13.0,
+        0.0
+      ],
+      [
+        13.0,
+        13.0,
+        3.0
+      ]
+    ],
+    "csg_status": "Error.NoError",
+    "stl_sha256": "fda395fbc6accfec0b46baf2508b41563e216a35befe1c0a6ba2e1f7d9b659c0"
+  },
+  "motion": {
+    "sample_step_deg": 1,
+    "collisions": [],
+    "axial_gap_mm": 0.4,
+    "future_chambers_open_at_dwell": false,
+    "return_requires_empty": true,
+    "self_intersections": "Run validate_intersections.py; independent MeshLab results are in self_intersections.json"
+  },
+  "fixed_part_collisions": [],
+  "drawer_collision_offsets_mm": [],
+  "reference_envelope_collisions": []
+}
